@@ -175,7 +175,7 @@ public class Main extends JavaPlugin implements Runnable {
 	}
 
 	public void onEnable() {
-		Bukkit.getConsoleSender().sendMessage(this.header + "[DPT.MC] Lottery Loading Please Wait....");
+		this.getServer().getLogger().info("[DPT.MC] Lottery Loading Please Wait....");
 		this.configFile = new File(this.getDataFolder(), "config.yml");
 
 		try {
@@ -252,7 +252,7 @@ public class Main extends JavaPlugin implements Runnable {
 
 	@Override
 	public void onDisable() {
-		System.out.println("Lottery Disabled");
+		this.getServer().getLogger().info("[DPT.MC] Lottery Disabled");
 	}
 	
 	private String format(String message) {
