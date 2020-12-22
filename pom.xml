@@ -3,7 +3,7 @@
          xsi:schemaLocation="http://maven.apache.org/POM/4.0.0 http://maven.apache.org/xsd/maven-4.0.0.xsd">
     <modelVersion>4.0.0</modelVersion>
 
-    <artifactId>PluginName</artifactId>
+    <artifactId>Lottery</artifactId>
     <version>1.0.0-SNAPSHOT</version>
 	<groupId>io.dpteam</groupId>
 
@@ -25,7 +25,7 @@
 
     <build>
         <defaultGoal>clean install</defaultGoal>
-        <finalName>PluginName</finalName>
+        <finalName>Lottery</finalName>
         <sourceDirectory>src/main/java</sourceDirectory>
         <resources>
             <resource>

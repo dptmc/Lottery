@@ -1,4 +1,5 @@
-# DPT-PluginRepoTemplate
-DPT Specific Plugins for Bukkit-based plugin template
+# Lottery
 
-![Build](https://github.com/dptmc/DPT-PluginRepoTemplate/workflows/Build/badge.svg)
+Lottery
+
+![Build](https://github.com/dptmc/Lottery/workflows/Build/badge.svg)

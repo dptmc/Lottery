@@ -1,6 +1,5 @@
-name: PluginName
+name: Lottery
 version: @version@-@apiversion@
-description: An empty plugin for Spigot with Maven
-authors: [ DartPower, AnotherContributorName ]
-website: https://github.com/dptmc/DPT-PluginRepoTemplate
-main: io.dpteam.PluginName.Main
+author: DartPower
+website: https://github.com/dptmc/Lottery
+main: io.dpteam.Lottery.Main
