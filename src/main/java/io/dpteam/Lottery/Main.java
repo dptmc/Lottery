@@ -175,7 +175,7 @@ public class Main extends JavaPlugin implements Runnable {
 	}
 
 	public void onEnable() {
-		this.getServer().getLogger().info("[DPT.MC] Lottery Loading Please Wait....");
+		this.getServer().getLogger().info("[Lottery] Loading, please wait...");
 		this.configFile = new File(this.getDataFolder(), "config.yml");
 
 		try {
@@ -188,12 +188,12 @@ public class Main extends JavaPlugin implements Runnable {
 		this.loadYamls();
 		this.init();
 		if (!this.setupEconomy()) {
-			Bukkit.getConsoleSender().sendMessage(this.header + "[DPT.MC] Lottery Disabled. Vault dependency not found!");
+			Bukkit.getConsoleSender().sendMessage(this.header + "Lottery plugin disabled. Vault dependency not found!");
 			this.getServer().getPluginManager().disablePlugin(this);
 		} else {
 			Bukkit.getScheduler().scheduleSyncDelayedTask(this, this, (long)(20 * this.delay));
 			this.timestamp = System.currentTimeMillis() / 1000L + (long)this.delay;
-			Bukkit.getConsoleSender().sendMessage(this.header + "[DPT.MC] Lottery Enabled");
+			Bukkit.getConsoleSender().sendMessage(this.header + "Plugin loaded and enabled");
 		}
 
 	}
@@ -252,7 +252,7 @@ public class Main extends JavaPlugin implements Runnable {
 
 	@Override
 	public void onDisable() {
-		this.getServer().getLogger().info("[DPT.MC] Lottery Disabled");
+		this.getServer().getLogger().info("[Lottery] Plugin unloaded and disabled");
 	}
 	
 	private String format(String message) {
