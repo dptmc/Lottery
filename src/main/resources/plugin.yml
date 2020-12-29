@@ -3,4 +3,5 @@ version: @version@-@apiversion@
 author: DartPower
 website: https://github.com/dptmc/Lottery
 main: io.dpteam.Lottery.Main
+softdepend: [Vault]
 api-version: 1.13
